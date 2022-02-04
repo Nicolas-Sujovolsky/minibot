@@ -16,4 +16,4 @@ In each arbitrage opportunity, two stocks will be involved. Currently, the arbit
 
 How to use it
 -------------
-Run the main script minibot.py
+Download all files, group them together and run the main script *minibot.py*
