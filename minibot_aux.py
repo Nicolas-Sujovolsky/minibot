@@ -101,7 +101,7 @@ class Instrument():
                  'OF': msg['marketdata']['OF'][0]['price'],}
         cls.inst_list[symbol].future_market_data  = value
         # If market_data has changed
-        if old_data != msg['marketData']:
+        if old_data != value:
             print('The short implied rate for {} is:{}'.format(symbol,cls.inst_list[symbol].implied_rate_short() ) )
             print('The long implied rate for {} is:{}'.format(symbol,cls.inst_list[symbol].implied_rate_long()  )  )
             arbitrage_check,arbitrage_data = cls.arbitrage_check()
